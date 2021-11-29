@@ -1,0 +1,14 @@
+* , *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aqua;
+    font-family: 'Outfit', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+hi > span /* direct child */

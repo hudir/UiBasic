@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    position: fixed;
+}
+
+ul {
+    display: flex;
+}
+
+@media (max-width: 12450px) {
+    color: red;
+}

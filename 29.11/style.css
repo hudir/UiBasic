@@ -1,0 +1,29 @@
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+a:active {
+    color: forestgreen;
+}
+
+a:visited {
+   display: none;
+}
+
+a:hover {
+    background-color: goldenrod;
+    border-bottom: 4px solid grey;
+}
+
+a {
+    &:link {
+        color
+    }
+    &:active{
+
+    }
+    &:visited{
+        
+    }
+}

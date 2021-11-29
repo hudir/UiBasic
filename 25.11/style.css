@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    background-color: beige;
+    margin: 20px 0;
+}
+
+span {
+    background-color: blanchedalmond;
+    margin: 20px;
+}
+
+/* html lists */
+
+.daily {
+    list-style-type: "\2693"
+}
+
+li {
+    padding-left: 30px;
+}
+
+.grocery {
+    list-style-type: "\2714";
+}
+
+/* simple selectors */
+
+/* p {
+    color: cyan;
+    font-weight: bolder;
+} */
+
+.red {
+    color: red
+}
+
+.blue {
+    color: blue;
+}
+
+#id1 {
+    font-size: 30px;
+    text-align: right;
+}
+
+#id2 {
+    text-align: center;
+    color: lightcoral;
+}
+
+#id3 {
+    font-weight: bold;
+}
+
+#p1 {
+    color: red;
+}
+
+/* p {
+    color:blue !important;
+} */
+
+.para {
+    color: green;
+}
