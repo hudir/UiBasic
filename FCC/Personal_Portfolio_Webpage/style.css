@@ -1,0 +1,30 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+
+    }
+  }
+
+*  {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    position: fixed;
+    top: -3px;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+#welcome-section h1 {
+    line-height: 100vh;
+    text-align: center;
+    font-size: 50px;
+}
