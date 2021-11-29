@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+}
+
+main {
+    margin-left: 20%;
+}
