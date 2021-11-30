@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*  :root = html */
+/* font-size: 16px;  default value */
+html {
+    font-size: 62.5%;  
+    /* 16px * 62.5% = 10px */
+}
+
+.pixel {
+    padding: 20px;
+    width: 350px;
+    font-size: 25px;
+    background-color: lightblue;
+    margin-bottom: 20px;
+}
+
+.percentage {
+    width: 50%;
+    font-size: 25px;
+    background-color: lightblue;
+    margin-bottom: 20px;
+}
+
+.child {
+    width: 50%;
+    background-color: orange;
+}
+
+.viewportWidth {
+    padding: 20px;
+    width: 75vw;
+    background-color: lightblue;
+    margin-bottom: 20px;
+}
+
+.vwChild{
+    width: 50vw;
+    background-color: blueviolet;
+}
+
+nav {
+    height: 70px;
+    font-size: 4rem;
+}
+
+.viewportHeight {
+    line-height: calc(100vh - 70px);
+    width: 100vw;
+    background-color: lightcoral;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.l {
+    margin-bottom: 50px;
+}
+
+.parent {
+    font-size: 20px;
+    margin-bottom: 50rem;
+}
+
+.em {
+    font-size: .5em;
+}
+
+.rem {
+    font-size: 2.3rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 50%;  /* 1rem = 8 px */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 40%;  /* 1rem = 6.4 px */
+    }
+}
+
+/* *****img****** */
+
+.fireMan {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.topright {
+    object-position: bottom left;
+}
+
+br + a:hover {
+    cursor: -webkit-grabbing;
+}
+
+/* img */.pineapple {
+    width: 500px;
+    height: 500px; 
+    object-fit:cover;
+    object-position: bottom right;
+    border-radius: 50%;
+    border: 5px solid tomato;
+}
+
+.pineapple.opacity {
+    opacity: .5;
+}
+
+.dodger {
+    border: 5px solid dodgerblue;
+}
