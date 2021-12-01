@@ -25,6 +25,8 @@ clear float use
         }
 
 ## broder 
- - border-width by default: 3px
- - border-color by default: black
- - border-style by default; none
+- border-width by default: 3px
+- border-color by default: black
+- border-style by default; none
+
+:root = html
