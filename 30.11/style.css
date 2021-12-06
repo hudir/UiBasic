@@ -118,3 +118,31 @@ br + a:hover {
 .dodger {
     border: 5px solid dodgerblue;
 }
+
+
+/* responsive */
+
+.responsive {
+    max-width: 100vw;
+    height: 300px;
+}
+
+.responsive img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.centered{
+    text-align: center;
+}
+
+.centered img {
+    width: 100px;
+}
+
+.op2 {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+}
