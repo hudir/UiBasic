@@ -104,7 +104,7 @@ ul:nth-of-type(2) li:nth-of-type(2) {
     visibility: hidden;
 }
 
-.overflow-s {
+.overflow-scroll {
     width: 200px;
 
     height: 200px;
@@ -113,9 +113,62 @@ ul:nth-of-type(2) li:nth-of-type(2) {
     overflow: scroll;
 }
 
-.overflow-a {
+.overflow-auto {
     width: 200px;
     height: 200px;
     background-color: yellowgreen;
     overflow: auto;
+    margin-bottom: 200px;
+}
+
+
+/* text-shadow & box shadow */
+
+p.p1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 10px black, -2px -2px 10px black;
+
+    padding: 30px;
+    border: 1px solid tomato;
+    width: 900px;
+    margin: 50px auto;
+    box-shadow: 5px 5px  10px gray inset, -5px -5px 10px gray inset;
+}
+
+
+
+/* pseudo element */
+
+div.d1 {
+    margin: 20px;
+    padding: 20px;
+    font-size: 2rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+div.d1::before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: magenta;
+    display: block;
+    border-radius: 3px;
+   /*  margin-right: 30px; */
+   margin-bottom: 20px;
+    /* vertical-align: middle; */
+}
+
+div.d1::after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: lime;
+    display: block;
+    border-radius: 3px;
+    /* margin-left: 30px; */
+    margin-top: 20px;
+   /*  vertical-align: middle; */
+    
 }
