@@ -1,0 +1,95 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 20px;
+}
+
+.bg {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid red;
+    background-color: transparent;
+    background-color: cyan;
+    margin: 0 0 30px;
+}
+/* BG-image with exact size */
+.bg-developer {
+    width: 640px;
+    height: 400px;
+    padding: 10px;
+    border: 5px solid red;
+   /*  background-image: url("./images/developer.png");
+    background-color: cadetblue; */
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    /* shorthand */
+    background: url(./images/developer.png) cadetblue;
+}
+/* BG-image with bigger size */
+.bg-developer-big {
+    width: 640px;
+    height: 400px;
+    padding: 10px;
+    border: 5px solid red;
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    /* background-size: cover; */
+     /* shorthand */
+     background: url(./images/developer-big.png) cadetblue;
+}
+/* BG-image with smaller size */
+.bg-small {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    border: 5px solid red;
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+     /* shorthand */
+     background: url(./images/developer-small.png) cadetblue no-repeat 0 0 /cover;
+} 
+
+/* more than one bf-images */
+
+.multi-images {
+    width: 640px;
+    height: 400px;
+    padding: 10px;
+    border: 5px solid red;
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+    /* background-color: cadetblue; */
+/*     background-image: url("./images/developer-xsmall.png"), url("./images/developer3.jpeg"), url("./images/developer4.jpeg"), url("./images/developer5.png");
+    background-repeat: no-repeat;
+ */
+    background: url("./images/developer-xsmall.png") no-repeat, url("./images/developer3.jpeg") no-repeat, url("./images/developer4.jpeg") no-repeat, url("./images/developer5.png") no-repeat 0 0 / cover;
+}
+
+/* bg-position */
+.bg-position {
+    width: 600px;
+    height: 550px;
+    border: 5px solid red;
+    margin: 0 0 30px;
+    /* background-image: url("./images/developer-xsmall.png") ;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    background-position: 70% 90%; */
+    background: url("./images/developer-xsmall.png") no-repeat 20px 20px, url("./images/developer3.jpeg") no-repeat 100% 100%;
+}
