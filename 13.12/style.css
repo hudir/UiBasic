@@ -1,0 +1,102 @@
+*
+, *::before
+, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    padding: 20px;
+}
+/* hr {
+    opacity: 0.5;
+    display: inline;
+} */
+hr{
+    margin: 1rem 2rem;
+}
+h1 {
+    font-size: 4rem;
+    margin: 1rem 2rem;
+}
+h3 {
+    font-size: 2.5rem;
+    margin: 1rem 2rem;
+}
+p {
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+    text-align: justify;
+}
+
+/* Tablet version */
+@media screen and (max-width: 992px) {
+    :root {
+        font-size: 50%;
+    }
+}
+/* mobile version */
+@media screen and (max-width: 414px) {
+    :root {
+        font-size: 30%;
+    }
+}
+
+/* span {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    display: block;
+} */
+
+.top 
+, .middle
+, .bottom
+, .baseline
+, .length {
+    margin-bottom: 2rem;
+    border: 1px solid red;
+    background-color: aliceblue;
+}
+.top > * {
+    vertical-align: top;
+}
+.middle > * {
+    vertical-align: middle;
+}
+.bottom > * {
+    vertical-align: bottom;
+}
+.baseline > * {
+    vertical-align: baseline;
+}
+.length > * {
+    vertical-align: 500%;
+    line-height: 5px;
+}
+h2 {
+    display: inline-block; 
+}
+
+p > * {
+    vertical-align: -50px;
+}
+
+div {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+div p {
+    font-weight: lighter;
+}
+div p span {
+    font-weight: normal;
+    color: blue;
+    text-decoration: line-through wavy ;
+    display: inline-block;
+    padding-bottom: 20px;
+    text-shadow: 3px -5px 5px red ;
+}
