@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <table class="t6">
+        <caption>Super Heros</caption>
+        <colgroup>
+            <col class="cg1">
+            <col span="2" class="cg2">
+            <col span="2" class="cg3">
+        </colgroup>
+        <tr>
+            <th>111</th>
+            <th scope="col">Batman</th>
+            <th scope="col">Robin</th>
+            <th scope="col">The Flash</th>
+            <th scope="col">Kid Flash</th>
+        </tr>
+        <tr>
+            <th scope="row">Skill</th>
+            <td>Smarts</td>
+            <td>Dex, acrobat</td>
+            <td>super speed</td>
+            <td>super speed</td>
+        </tr>
+        <tr>
+            <th scope="row">Skill</th>
+            <td>Smarts</td>
+            <td>Dex, acrobat</td>
+            <td>super speed</td>
+            <td>super speed</td>
+        </tr>
+        <tr>
+            <th scope="row">Skill</th>
+            <td>Smarts</td>
+            <td>Dex, acrobat</td>
+            <td>super speed</td>
+            <td>super speed</td>
+        </tr>
+    </table>
+
+ 
+
+
+
+
+
+    <table class="t5" align="right" border="3" width="400" height="400" bgcolor="lightblue" cellpadding="20" cellspacing="20">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Telephone</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>+4955257890</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Doe</td>
+            <td>45</td>
+            <td>+4945454545</td>
+            <td>Lorem ipsum dolor sit amet consectetur.</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>20</td>
+            <td>+4945454545</td>
+            <td>Lorem ipsum dolor sit.</td>
+        </tr>
+    </table>
+
+
+
+
+
+    <!-- colspan ¬ rowspan -->
+    <table class="t4">
+        <caption>
+            NameList
+        </caption>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Telephone</th>
+                <th>Address-1</th>
+                <th>Address-2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Jill</td>
+                <td rowspan="2">Smith</td>
+                <td rowspan="2">50</td>
+                <td>+86 11111111</td>
+                <td rowspan="2">Lorem, ipsum dolor.</td>
+                <td rowspan="2">Lorem ipsum dolor sit.</td>
+            </tr>
+            <tr>
+                <td>+49 111587455</td>
+                
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Doe</td>
+                <td>25</td>
+                <td>+58 5588544</td>
+                <td colspan="2">Lorem ipsum dolor sit.</td>
+                
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>31</td>
+                <td>+44 88552558</td>
+                <td colspan="2">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Mike</td>
+                <td rowspan="2">Smith</td>
+                <td rowspan="2">50</td>
+                <td>+49 5845584</td>
+                <td colspan="2" rowspan="2">Lorem ipsum dolor sit.</td>
+                
+            </tr>
+            <tr>
+                <td>+86 665478456</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+    <table class="t3">
+        <caption>NameList</caption>
+        <thead> <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Telephone</th>
+            <th>Address</th>
+        </tr>
+    
+        </thead>
+        <tbody>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>+4955257890</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Doe</td>
+            <td>45</td>
+            <td>+4945454545</td>
+            <td>Lorem ipsum dolor sit amet consectetur.</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>20</td>
+            <td>+4945454545</td>
+            <td>Lorem ipsum dolor sit.</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>20</td>
+            <td>+4945454545</td>
+            <td>Lorem ipsum dolor sit.</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Lorem ipsum dolor sit amet.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+    <div class="dft2"> <table class="t2">
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <th>FirstName</th>
+            <td>Jill</td>
+            <td>Eve</td>
+            <td>John</td>
+            <td>Mike</td>
+        </tr>
+        <tr>
+            <th>LastName</th>
+            <td>Smith</td>
+            <td>Doe</td>
+            <td>Stone</td>
+            <td>Cage</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>50</td>
+            <td>25</td>
+            <td>30</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <th>Telephone</th>
+            <td>+4977888999</td>
+            <td>+4985225555</td>
+            <td>+4965362647</td>
+            <td>+4915255969</td>
+        </tr>
+        <tr>
+            <th>Adress</th>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Lorem ipsum dolor sit.</td>
+            <td>Lorem ipsum dolor sit.</td>
+        </tr>
+    </table></div>
+   
+
+
+
+
+
+
+
+
+    <table class="t1">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Telephone</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            <td>+4955257890</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Doe</td>
+            <td>45</td>
+            <td>+4945454545</td>
+            <td>Lorem ipsum dolor sit amet consectetur.</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>20</td>
+            <td>+4945454545</td>
+            <td>Lorem ipsum dolor sit.</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+    
+</body>
+</html>
