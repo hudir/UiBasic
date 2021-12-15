@@ -51,3 +51,26 @@ body {
     border: 1px solid blue;
     margin-top: 80px;
 }
+
+.t3 {
+    border-collapse: collapse;
+}
+.t3 th
+, .t3 td 
+, .t3 tr{
+    padding: 20px;
+    border: 1px solid;
+}
+.t3 thead {
+    background-color: orange;
+}
+.t3 tbody {
+    background-color: lightblue;
+}
+.t3 tfoot {
+    background-color: lightgray;
+    text-align: center;
+}
+.t3 caption {
+    caption-side: bottom;
+}
