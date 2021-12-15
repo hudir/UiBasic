@@ -1,0 +1,53 @@
+*
+, *::before
+, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    padding: 20px;
+    font-size: 262.5%;
+}
+
+.t1 {
+    border-spacing: 21px;
+    border-collapse: collapse;
+    margin-top: 80px;
+}
+.t1
+, .t1 th 
+, .t1 td {
+    border: 1px solid;
+}
+.t1 th 
+, .t1 td {
+    padding: 15px;
+}
+.t1 td {
+    text-align: right;
+}
+
+.t2 {
+    padding: 20px;
+    border: 1px solid blue;
+    /* border-spacing: 0px; */
+    border-collapse: collapse;
+}
+.t2 th 
+, .t2 td {
+    border: 1px solid;
+    padding: 10px;
+}
+.t2 td {
+    text-align: center;
+}
+.dft2 {
+    padding: 20px;
+    border: 1px solid blue;
+    margin-top: 80px;
+}
