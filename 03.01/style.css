@@ -1,0 +1,56 @@
+
+*
+, *::before
+, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+    font-size: 120%;
+}
+body {
+    padding: 20px;
+}
+
+form {
+    background-color: lightblue;
+    margin: 20px 0;
+    padding:  15px;
+    width: fit-content;
+}
+label {
+    display: block;
+}
+input {
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: none;
+}
+input:focus {
+     outline: none;
+    outline: 5px solid green;
+    border: 1px solid red;
+}
+
+
+input[type="radio"]
+,input[type="checkbox"] {
+    display: inline;
+    width: fit-content;
+    vertical-align: middle;
+}
+input[type="radio"] + label 
+, input[type="checkbox"] + label{
+    display: inline;
+    margin-right: 20px;
+}
+
+input[type="file"]  {
+    color: green;
+    text-transform: lowercase;
+}
+

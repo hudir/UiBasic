@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Form Element &lt;input&gt; </h2>
+
+    <h4>input type="range"</h4>
+    <form action="">
+        <label for="price">Price</label>
+        <input type="range" name="" id="price" min="10" max="100" value="20" step="10" onchange="changeHandler()">
+        <p class="price"></p>
+    </form>
+
+    <script>
+        function changeHandler() {
+            let val = document.querySelector('#price').value;
+            document.querySelector('.price').innerText = val;
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h4>input type="email, file, number"</h4>
+    <form action="">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+
+        <label for="email2">Email</label>
+        <input type="email" name="email2" id="email2">
+
+        <label for="code">Code</label>
+        <input type="number" name="" id="code">
+
+        <label for="file">Upload your file</label>
+        <input type="file" name="file" id="file">
+
+        <input type="submit" value="Send">
+    </form>
+
+
+
+
+
+
+
+
+
+
+    <h4>input type="radio, checkbox, button"</h4>
+
+    <form action="">
+        <h3>Register</h3>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname">
+
+
+        <label for="lastname">Lastname</label>
+        <input type="text" id="lastname" >
+
+        <input type="radio" name="developer" id="frontend" value="frontend">
+        <label for="frontend">Frontend</label>
+
+        <input type="radio" name="developer" id="backend" value="backend">
+        <label for="backend">Backend</label>
+
+        <input type="radio" name="developer" id="java" value="java" checked>
+        <label for="java">Java Developer</label>
+
+
+        <hr>
+
+
+        <input type="checkbox" value="HTML" id="html" checked>
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="react" value="React">
+        <label for="react">React</label>
+
+        <input type="checkbox" id="ckjava" value="Java">
+        <label for="ckjava">Java</label>
+
+        <input type="checkbox" id="js" value="Javascript">
+        <label for="js">JavaScript</label>
+
+        <input type="submit" value="Send">
+
+        <label for="color">Which color do u like?</label>
+        <input type="color" name="" id="color">
+
+        <label for="brd">Your birthday</label>
+        <input type="date" name="" id="brd">
+
+
+        <label for="time">When will u come to my home?</label>
+        <input type="datetime-local" name="" id="time">
+
+        <label for="upload">Your Picture</label>
+        <input type="file" name="" id="upload">
+
+        <label for="mouth">Your favmouth</label>
+        <input type="month" name="" id="mouth">
+
+        <label for="age">Pls tell ur ages</label>
+        <input type="number" name="" id="age" min="10" step="40" max="100">
+
+
+        <div>
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum debitis recusandae numquam tempora, consequatur incidunt quam quasi, fugit natus suscipit itaque culpa asperiores dolorem, dolor perspiciatis libero quidem? Vero, laboriosam.</p>
+            <input type="button" value="Read more" onclick="alert('Your data is send to Server')">
+        </div>
+        
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    <form action="" target="" method=""
+     autocomplete="" novalidate=""></form>
+
+     
+     <h4>input type="text"</h4>
+
+     <form action="">
+         <label for="uname">Username</label>
+         <input type="text" id="uname" placeholder="Username">
+
+         <label for="company">Company</label>
+         <input type="text" id="company" placeholder="Company">
+
+         <label for="country">Country</label>
+         <input type="text" id="country" placeholder="Country">
+
+         <input type="submit" value="Send Date">
+         <input type="reset" value="Clear Fields">
+
+     </form>
+
+     <form action="">
+         <label for="name">YourName</label>
+         <input type="text" id="name">
+
+         <label for="email">YourEmail</label>
+         <input type="email" id="email">
+
+         <label for="address">Address</label>
+         <input type="text" id="address">
+
+         <label for="number">Handy</label>
+         <input type="number" name="" id="number">
+
+
+
+     </form>
+    
+</body>
+</html>
