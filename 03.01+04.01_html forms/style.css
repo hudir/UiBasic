@@ -1,0 +1,121 @@
+*
+, *::before
+, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+    font-size: 120%;
+}
+body {
+    padding: 20px;
+}
+form {
+    background-color: lightblue;
+    margin: 20px 0;
+    padding:  15px;
+    width: fit-content;
+}
+input {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+}
+select {
+    display: block;
+    vertical-align: middle;
+    width: 150px;
+}
+/* select label {
+    vertical-align: middle;
+} */
+select option {
+    width: 120px;
+    text-align: center;
+}
+input[type="submit"] {
+    display: block;
+    margin: 15px auto;
+    padding: 7px 50px;
+    width: 100px;
+}
+textarea {
+    display: block;
+    width: 300px;
+    height: 200px;
+    resize: none;
+}
+fieldset {
+    padding: 10px;
+}
+fieldset fieldset {
+    border: 3px solid blueviolet;
+}
+legend {
+    padding: 0 10px;
+}
+form > fieldset > legend {
+    color: blueviolet;
+    font-weight: 900;
+    font-size: 35px;
+}
+fieldset fieldset legend {
+    color: brown;
+}
+fieldset fieldset:nth-of-type(2) legend {
+    color: coral;
+    font-size: 20px;
+}
+input[type="image"] {
+    width: fit-content;
+    display: inline-block;
+}
+
+
+
+
+/* 
+firstday 03.08
+form {
+    background-color: lightblue;
+    margin: 20px 0;
+    padding:  15px;
+    width: fit-content;
+}
+label {
+    display: block;
+}
+input {
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: none;
+}
+input:focus {
+     outline: none;
+    outline: 5px solid green;
+    border: 1px solid red;
+}
+
+
+input[type="radio"]
+,input[type="checkbox"] {
+    display: inline;
+    width: fit-content;
+    vertical-align: middle;
+}
+input[type="radio"] + label 
+, input[type="checkbox"] + label{
+    display: inline;
+    margin-right: 20px;
+}
+
+input[type="file"]  {
+    color: green;
+    text-transform: lowercase;
+}
+
+ */
