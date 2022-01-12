@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --brandColor : #dc0000;
+    --brandDarkerColor : #a50404;
+    --primaryFontSize : 20px; 
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rosybrown;
+    background-image: url("./uib-layout-travel-destination-form-hudir/images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* main {
+    border: 3px solid red;
+} */
+h1 {
+    font-size: 40px;
+    color: rgba(255, 255, 255, .8);
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+}
+.row {
+    display: flex;
+    margin-bottom: 16px;
+    width: 100%;
+}
+.inputcontainer {
+    display: flex;
+    width: 100%;
+    
+}
+.inputcontainer:not(:last-of-type) {
+    margin-right: 16px;
+}
+
+label {
+    color: white;
+    padding: 10px;
+    background-color: var(--brandColor);
+    /* flex-basis: 30%; */
+}
+input {
+    border: 1px solid white;
+    padding: 8px 16px;
+    /* flex-basis: 70%; */
+}
+input:focus {
+    outline: none;
+}
+.row-right-aligned {
+    justify-content: flex-end;
+}
+
+.btn {
+    border: 1px solid var(--brandColor);
+    background-color: var(--brandColor);
+    padding: 8px 16px;
+    color: white;
+    transition: 0.5s;
+}
+.btn:not(:last-of-type) {
+    margin-right: 16px;
+}
+.btn-secondary {
+    background-color: rgba(255, 255, 255, .6);
+    color: var(--brandColor);
+}
+.btn:hover {
+    background-color: var(--brandDarkerColor);
+    border-color: var(--brandDarkerColor);
+
+    cursor: pointer;
+    
+    transform: translateY(-2px);
+}
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+ 
+    main {
+        margin: 0 15px;
+    }
+    h1 {
+        font-size: 40px;
+        text-shadow: 0 0 10px rgba(120, 120, 120, 1);
+    }
+
+    
+    .row {
+        flex-direction: column;
+    }
+    .inputcontainer {
+        margin-bottom: 16px; 
+    }
+    .inputcontainer:not(:last-of-type) {
+        margin-right: 0;
+    }
+    
+    label {
+        color: white;
+        padding: 10px;
+        background-color: var(--brandColor);
+        /* flex-basis: 30%; */
+    }
+    input {
+       flex-grow: 1;
+    }
+    .row-right-aligned {
+        flex-direction: row;
+    }
+ 
+}
+
+@media screen and (max-width: 320px) {
+
+    h1 {
+        font-size: 30px;
+       
+    }
+}
