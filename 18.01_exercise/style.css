@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+/* header and footer  */
+body {
+    background-color: #eee;
+    display: grid;
+   
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 25px 1fr 25px;
+}
+p:first-of-type,
+p:nth-of-type(7),
+main + p {
+    font-weight: bold;
+}
+
+main + p {
+    grid-area: 3/1/4/2;
+}
+address {
+    grid-area: 3/6/4/7;
+}
+
+/* main part  */
+main {
+    grid-area: 2/1/3/9;
+    width: 100%;
+    height: 90vh;
+   
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 150fr);
+    gap: 5px;
+}
+/* main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* images */
+div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pic1 {
+    grid-area: 1/1/2/2;
+    background-image: url('./assets/item-one.jpeg');
+}
+.pic2 {
+    grid-area: 1/2/2/3;
+    background-image: url('./assets/item-two.jpeg');
+}
+.pic3 {
+    grid-area: 4/7/5/8;
+    background-image: url('./assets/item-three.jpeg');
+}
+.pic4 {
+    grid-area: 3/6/4/7;
+    background-image: url('./assets/item-four.jpeg');
+}
+.pic5 {
+    grid-area: 2/5/3/6;
+    background-image: url('./assets/item-five.jpeg');
+}
+.pic6 {
+    grid-area: 2/3/3/4;
+    background-image: url('./assets/item-six.jpeg');
+}
+.pic7 {
+    grid-area: 3/4/4/5;
+    background-image: url('./assets/item-seven.jpeg');
+}
+.pic8 {
+    grid-area: 3/1/5/3;
+    background-image: url('./assets/item-eight.jpeg');
+}
+.pic9 {
+    grid-area: 1/7/3/9;
+    background-image: url('./assets/item-nine.jpeg');
+}
+h1 {
+    grid-area: 2/4/3/7;
+    
+    color: red;
+    font-size: 80px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    letter-spacing: 12px;
+}
+
+
+
+
+
+
