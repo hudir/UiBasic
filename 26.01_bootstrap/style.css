@@ -1,0 +1,21 @@
+*
+, *::before
+, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+} 
+
+/* can i change ba-info? */
+body div .bg-info {
+    background-color: aliceblue;
+    color: brown;
+}
+/* it seems i can't change bg-color but i can add some other property to is */
