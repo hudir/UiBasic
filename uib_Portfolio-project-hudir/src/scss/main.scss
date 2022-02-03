@@ -1,0 +1,227 @@
+// This is where you can import other stylesheets or write your scss code
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./_var.scss";
+@import "./_triangle";
+@import "./_color_guide";
+@import "./_mixin";
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+
+// banner
+body section.banner {
+    width: 100%;
+    height: 100vh;
+    background: map-get($colors,t-dark);
+    overflow: hidden;
+
+    div.move-right {
+        height: 60px;
+        width: 607px;
+        position: absolute;
+        background: map-get($colors,t-dark);
+        color: map-get($colors, cyber-green);  
+        margin-left: 10%;
+        animation: moveRight 10s both;
+        
+
+        p {
+            padding-top: 10px;
+            animation: blink 700ms infinite;
+            font-weight: 900;
+            font-size: 21px;
+        }
+
+    }
+    div:nth-of-type(2) {
+        // border: 1px salmon solid;
+        padding-top: 12px;
+        padding-left: 10%;
+        
+        width: 100%;
+        p {
+            color: map-get($colors, cyber-green);  
+            line-height: 20px;
+            font-size: 30px;
+            font-weight: 500;
+
+            a {
+                color: map-get($colors, cyber-green);  
+                text-decoration: underline;
+            }
+        } 
+    }
+    @keyframes moveRight {
+        0% {
+            transform: translateX(1px);
+        }
+        10% {
+            transform: translateX(40px);
+        }
+        20% {
+            transform: translateX(40px);
+        }
+        40% {
+            transform: translateX(170px);
+        }
+        42% {
+            transform: translateX(170px);
+            width: 550px;
+        }
+        45% {
+            transform: translateX(215px);
+        }
+        50% {
+            transform: translateX(250px);
+        }
+       70% {
+            transform: translateX(370px);
+        }
+        88% {
+            transform: translateX(455px);
+        }
+        92% {
+            transform: translateX(455px);
+        }
+        100% {
+            transform: translateX(607px);
+            width: 155px;
+        } 
+    }
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        51% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
+
+
+// navbar
+body nav {
+    width: 100%;
+    height: $nav-height;
+    background: map-get($colors, t-dark);
+   
+
+    img {
+        height: 100%;
+    }
+}
+
+// about
+section.about {
+    width: 100%;
+    height: $section-height;
+    background: map-get($colors, about-bg );
+    
+    div {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        h1 {
+            font-size: 58px;
+            color: map-get($colors, t-dark);
+        }
+        img {
+            height: 70%;
+        }
+    }
+}
+
+// skills
+section.skills {
+    @include sectionSet;
+
+    > div {
+        height: 100%;
+        display: flex;
+    }
+    div div {
+        width: 50%;
+        height: 100%;
+
+        p {
+            color: map-get($colors, skill-t);
+        }
+    }
+    .skill-1 {
+        padding-top: 10px;
+
+        h4 {
+            align-self: flex-start;
+            color: map-get($colors, t-light);
+        }
+    }
+    .skill-2 {
+        @include center;
+        flex-direction: column;
+
+        h4{
+            color: map-get($colors, t-light);
+            margin-bottom: 30px;
+        }
+        ol {
+            list-style: none;
+
+            li {
+                font-size: 20px;
+                color: map-get($colors, t-light); 
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    
+}
+
+// exercise
+section.exercise1
+, section.exercise2 {
+    @include sectionSet;
+
+    h5
+    ,p {
+        color: map-get($colors, t-light);
+    }
+    .triangle_container {
+        height: 320px;
+        @include center;
+        
+    }
+    .colorguide_container {
+        height: 320px;
+        width: 50%;
+        margin: 0px auto;
+        display: flex;
+       align-items: flex-start;
+       flex-direction: column;
+    }
+}
+
+section.exercise3 {
+    @include sectionSet;
+
+    h5 {
+        color: map-get($colors, t-light );
+    }
+}
+
+
+
+

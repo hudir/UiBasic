@@ -1,0 +1,64 @@
+
+@mixin setColor($bgc, $text) {
+    background: map-get($colors, $bgc);
+
+    p {
+        color: map-get($colors, $text)
+    }
+}
+
+div.colorguide {
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: flex;
+    // border: 1px solid red;
+    overflow: hidden;
+
+    div {
+        flex: 2 3 auto;
+        display: grid;
+        place-content: center;
+        transition: .2s;
+
+        p {
+            display: none;
+        }
+
+        &:hover {
+            flex: 3 1 auto;
+
+            p {
+                display: block;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .colorBox1 {
+        @include setColor(sky ,t-dark);
+    } 
+    .colorBox2 {
+        @include setColor(water ,t-light);
+    } 
+    .colorBox3 {
+        @include setColor(dark ,t-light);
+    } 
+    .colorBox4 {
+        @include setColor(light ,t-dark);
+    } 
+    .colorBox5 {
+        @include setColor(orang ,t-light);
+    } 
+ 
+}
+@media screen and (max-width: 600px) {
+    div.colorguide {
+        width: 95%;
+        height: 300px;
+        margin: 5px auto;
+        flex-direction: column; 
+    }
+}

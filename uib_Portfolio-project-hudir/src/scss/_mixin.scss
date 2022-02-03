@@ -1,0 +1,10 @@
+@mixin sectionSet {
+    height: $section-height;
+    width: 100%;
+    background: map-get($colors, skill-bg);
+}
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
