@@ -114,7 +114,6 @@ body nav {
     height: $nav-height;
     background: map-get($colors, t-dark);
    
-
     img {
         height: 100%;
     }
@@ -122,6 +121,7 @@ body nav {
 
 // about
 section.about {
+    padding-top: $nav-height;
     width: 100%;
     height: $section-height;
     background: map-get($colors, about-bg );
@@ -191,6 +191,9 @@ section.skills {
 }
 
 // exercise
+section.exercise1 {
+    padding-top: $nav-height;;
+}
 section.exercise1
 , section.exercise2 {
     @include sectionSet;
@@ -198,6 +201,9 @@ section.exercise1
     h5
     ,p {
         color: map-get($colors, t-light);
+        span {
+            color: map-get($colors, skill-t);
+        }
     }
     .triangle_container {
         height: 320px;
@@ -220,8 +226,82 @@ section.exercise3 {
     h5 {
         color: map-get($colors, t-light );
     }
+    a {
+        color: map-get($colors, cyber-green);
+    }
+
+    div div {
+        border-radius: 7px;
+        padding-top: 7px;
+
+        &:hover {
+            background: map-get($colors, hover);
+        }
+    }
 }
 
 
+// contact
+section.contact {
+    height: $section-contact-height;
+    width: 100%;
+    background: map-get($colors, hover);
+    padding-top: 20px;
 
+    
+    div {
+        width: 100%;
 
+        h5 + div {
+            @include center;
+            
+            form {
+                width: 60%;
+                display: flex;
+                flex-flow: column nowrap;
+               
+                label {
+                    color: map-get($colors, skill-t);
+                    font-weight: 700;
+            
+                    &:hover {
+                        color: map-get($colors, cyber-green);
+                    } 
+                }  
+                input
+                , textarea{
+                    padding: .5rem;
+                    border: 1px solid rgba(128, 128, 128, 0.65);
+                    background-color: map-get($colors, about-bg);
+                    border-radius: 7px;
+                }       
+                .submit-btn {
+                    width: 10rem;
+                    margin-top: 1rem;
+                    background: none;
+                    color: map-get($colors, cyber-green);
+                    font-weight: 600;
+                    padding: .5rem;
+                    border: 1px solid rgba(128, 128, 128, 0.65);
+            
+                    &:hover {
+                        background: map-get($colors, cyber-green);
+                        color: map-get($colors, t-dark);
+            
+                    }
+                }
+                input:not([type="submit"]):focus
+                ,textarea:focus {
+                    outline: map-get($colors, cyber-green) solid 2px;
+                }
+                label {
+                    margin: 10px 0;
+                }
+            }
+        }
+       
+        h5 {
+            color: map-get($colors, t-light );
+        }   
+    } 
+}
