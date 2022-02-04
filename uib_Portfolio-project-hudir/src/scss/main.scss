@@ -277,12 +277,12 @@ section.contact {
                 }       
                 .submit-btn {
                     width: 10rem;
-                    margin-top: 1rem;
                     background: none;
                     color: map-get($colors, cyber-green);
                     font-weight: 600;
                     padding: .5rem;
                     border: 1px solid rgba(128, 128, 128, 0.65);
+                    margin: 1rem auto 0;
             
                     &:hover {
                         background: map-get($colors, cyber-green);
@@ -304,4 +304,20 @@ section.contact {
             color: map-get($colors, t-light );
         }   
     } 
+}
+
+
+// footer
+footer {
+    width: 100%;
+    background: map-get($colors,t-dark);
+    color: map-get($colors, cyber-green );
+
+    a {
+        color: map-get($colors, cyber-green );
+
+        &:hover {
+            color: map-get($colors, cyber-green );
+        }
+    }
 }

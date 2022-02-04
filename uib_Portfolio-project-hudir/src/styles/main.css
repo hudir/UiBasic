@@ -10026,12 +10026,12 @@ section.contact div h5 + div form input, section.contact div h5 + div form texta
 }
 section.contact div h5 + div form .submit-btn {
   width: 10rem;
-  margin-top: 1rem;
   background: none;
   color: #03c203;
   font-weight: 600;
   padding: 0.5rem;
   border: 1px solid rgba(128, 128, 128, 0.65);
+  margin: 1rem auto 0;
 }
 section.contact div h5 + div form .submit-btn:hover {
   background: #03c203;
@@ -10046,6 +10046,18 @@ section.contact div h5 + div form label {
 }
 section.contact div h5 {
   color: #fff;
+}
+
+footer {
+  width: 100%;
+  background: #222;
+  color: #03c203;
+}
+footer a {
+  color: #03c203;
+}
+footer a:hover {
+  color: #03c203;
 }
 
 /*# sourceMappingURL=main.css.map */
